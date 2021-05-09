@@ -16,6 +16,7 @@
 		A78A785326488214006850EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78A785126488214006850EA /* Main.storyboard */; };
 		A78A785526488215006850EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78A785426488215006850EA /* Assets.xcassets */; };
 		A78A785826488215006850EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78A785626488215006850EA /* LaunchScreen.storyboard */; };
+		A78A7861264894F5006850EA /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78A7860264894F5006850EA /* Checkbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		A78A785426488215006850EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78A785726488215006850EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A78A785926488215006850EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78A7860264894F5006850EA /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				A78A782C26488029006850EA /* UIElements.h */,
 				A78A782D26488029006850EA /* Info.plist */,
+				A78A7860264894F5006850EA /* Checkbox.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					A78A782826488029006850EA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					A78A783126488029006850EA = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78A7861264894F5006850EA /* Checkbox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		A78A783E2648802A006850EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sanjaypathak.UIElements;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		A78A783F2648802A006850EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,6 +492,7 @@
 		A78A78412648802A006850EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIElementsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +510,7 @@
 		A78A78422648802A006850EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIElementsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

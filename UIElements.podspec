@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "UIElements"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of UIElements."
+  spec.version      = "0.0.2"
+  spec.summary      = "UIElements solves the problem of writing code for designing UI elements not provided by Apple."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -40,8 +40,12 @@ Pod::Spec.new do |spec|
 
   # spec.license      = { :type => 'BSD' }
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  #spec.license      = { :type => "MIT", :file => "License" }
+  spec.license = { :type => 'MIT', :text => <<-LICENSE
+                   Copyright 2012
+                   Permission is granted to...
+                 LICENSE
+               }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   #spec.description  = <<-DESC
   #                 DESC
 
-    spec.homepage     = "https://www.google.com/"
+    spec.homepage     = "https://cocoapods.org/pods/UIElements"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   spec.swift_version = '5.0'
